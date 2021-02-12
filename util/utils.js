@@ -1,4 +1,7 @@
-const enviarRespuesta = (rpta,res) => res.status(rpta.status).send({data:rpta.data})
+const enviarRespuesta = (rpta,res) => {
+    console.log(rpta)
+    res.status(rpta.status).send({data:rpta.data})
+} 
 
 module.exports = {
     enviarRespuesta
